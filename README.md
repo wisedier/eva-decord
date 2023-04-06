@@ -1,9 +1,10 @@
-# Decord
+# EVA Decord
+ This is a fork of [Decord](https://github.com/dmlc/decord) that supports ffmpeg5 and builds/installs on newer macos versions.
+ There were two modifications made:
+  - [C++ changes to build with ffmpeg5](https://github.com/georgia-tech-db/eva-decord/pull/1/commits/b8c1cc85f347570e3fa6a4035e55de4aaa25f3ab) 
+    - Directly referenced from [this comment](https://github.com/dmlc/decord/issues/186#issuecomment-1171882325)
+  - [Building C++ when installing in python](https://github.com/georgia-tech-db/eva-decord/pull/1/commits/693532f4f18613d801aff20067dcb3d4ad51e76d)
 
-![CI Build](https://github.com/dmlc/decord/workflows/C/C++%20CI/badge.svg?branch=master)
-![Release Build](https://github.com/dmlc/decord/workflows/Publish%20to%20PYPI/badge.svg?branch=master)
-[![PyPI](https://img.shields.io/pypi/v/decord.svg)](https://pypi.python.org/pypi/decord)
-[![Downloads](http://pepy.tech/badge/decord)](http://pepy.tech/project/decord)
 
 ![symbol](docs/symbol.png)
 
