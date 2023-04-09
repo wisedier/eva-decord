@@ -1,9 +1,9 @@
 # EVA Decord
  This is a fork of [Decord](https://github.com/dmlc/decord) that supports ffmpeg5 and builds/installs on newer macos versions.
- There were two modifications made:
-  - [C++ changes to build with ffmpeg5](https://github.com/georgia-tech-db/eva-decord/pull/1/commits/b8c1cc85f347570e3fa6a4035e55de4aaa25f3ab) 
-    - Directly referenced from [this comment](https://github.com/dmlc/decord/issues/186#issuecomment-1171882325)
-  - [Building C++ when installing in python](https://github.com/georgia-tech-db/eva-decord/pull/1/commits/693532f4f18613d801aff20067dcb3d4ad51e76d)
+ To build the macos binaries:
+ - Follow the instructions below to build.
+ - Copy the `libdecord.dylib` into the `decord/python` directory.
+ - Run `python -m build` inside the `decord/python`. 
 
 
 ![symbol](docs/symbol.png)
