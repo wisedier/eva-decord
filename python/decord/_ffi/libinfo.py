@@ -48,6 +48,8 @@ def find_lib_path(name=None, search_path=None, optional=False):
 
     dll_path.append(install_lib_dir)
 
+    dll_path.append(install_lib_dir + "/../build")
+
     dll_path = [os.path.abspath(x) for x in dll_path]
     if search_path is not None:
         if search_path is list:
