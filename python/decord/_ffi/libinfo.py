@@ -39,6 +39,7 @@ def find_lib_path(name=None, search_path=None, optional=False):
 
     # Pip lib directory
     dll_path.append(os.path.join(ffi_dir, ".."))
+    dll_path.append(os.path.join(ffi_dir, "..", ".."))
     # Default cmake build directory
     dll_path.append(os.path.join(source_dir, "build"))
     dll_path.append(os.path.join(source_dir, "build", "Release"))
@@ -46,6 +47,8 @@ def find_lib_path(name=None, search_path=None, optional=False):
     dll_path.append(os.path.join(source_dir, "lib"))
 
     dll_path.append(install_lib_dir)
+
+    dll_path.append(install_lib_dir + "/../build")
 
     dll_path = [os.path.abspath(x) for x in dll_path]
     if search_path is not None:
